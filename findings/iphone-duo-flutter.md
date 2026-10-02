@@ -512,6 +512,8 @@ The Dart and Flutter teams now ship official agent skills, installed with
 of the ten are relevant here, one for responsive layouts and one for fixing
 layout issues. None covers foldables, which is this article's gap one layer up.
 
+---
+
 ## For the people deciding
 
 **Risk is moderate, not severe.** Nothing crashes. The failure mode is screens
