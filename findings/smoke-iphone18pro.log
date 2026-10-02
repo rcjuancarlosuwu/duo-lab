@@ -1,0 +1,140 @@
+Launching lib/main.dart on iPhone 18 Pro in debug mode...
+-[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
+-[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
+Indexing for request: <WFToolKitIndexingRequest: 0x105c540c0>, changeset: .full, priority: 31
+Running pod install...                                           1,091ms
+Running Xcode build...                                          
+Cleared Cascade pull bookmarks after full reindex
+Skipping: <WFUnionParameter: 0x10bc35300> in com.apple.Maps.MapsShowPlacesInAppIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10bc37a00> in com.apple.siri.messages.SiriMessagesAppIntentsExtension.SiriKitSendMessageIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFConfiguredSystemActionParameter: 0x10bd5f240> in com.apple.shortcuts.RunShortcutIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter) for locale: en
+Failed to index parameter type: <WFDynamicTagFieldParameter: 0x10bdfc000> in is.workflow.actions.wordpress.post: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFDynamicTagFieldParameter) for locale: en
+Failed to index parameter type: <WFDynamicTagFieldParameter: 0x10bdfc100> in is.workflow.actions.wordpress.post: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFDynamicTagFieldParameter) for locale: en
+Failed to index parameter type: <WFExpandingParameter: 0x10bdd17a0> in is.workflow.actions.wordpress.post: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFExpandingParameter) for locale: en
+Failed to index parameter type: <WFExpandingParameter: 0x10bdd1880> in is.workflow.actions.wordpress.post: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFExpandingParameter) for locale: en
+Skipping: <WFUnionParameter: 0x10bdfe600> in com.apple.siri.SiriVideoAppIntents.InternalPlayContentIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFEvernoteTagsTagFieldParameter: 0x10bdfe500> in is.workflow.actions.evernote.get: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFEvernoteTagsTagFieldParameter) for locale: en
+Failed to index parameter type: <WFLinkDynamicOptionsEnumerationParameter: 0x10bec5380> in com.apple.Passbook.AppleCashBillSplitIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem for locale: en
+Skipping: <WFUnionParameter: 0x10be7f000> in com.apple.mobilecal.CreateEventIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10be7f200> in com.apple.mobilecal.CreateEventIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10bef5d00> in com.apple.siri.SiriGeo.SiriGeoAppIntentExtension.ThirdPartyStartNavigationIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10bef5e00> in com.apple.siri.SiriGeo.SiriGeoAppIntentExtension.ThirdPartyStartNavigationIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFConfiguredSystemActionParameter: 0x10bf270c0> in com.apple.shortcuts.WFShortcutsWidgetConfigurationIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter) for locale: en
+Failed to index parameter type: <WFPhotoItemCollectionParameter: 0x10bf59dc0> in com.apple.mobileslideshow.PLPhotosReliveWidgetConfigurationIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFPhotoItemCollectionParameter) for locale: en
+Skipping: <WFUnionParameter: 0x10d911e00> in com.apple.MobileSMS.SendMessageReactionIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFExpandingParameter: 0x10bf5b640> in is.workflow.actions.downloadurl: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFExpandingParameter) for locale: en
+Skipping: <WFUnionParameter: 0x10d021100> in com.apple.MobileSMS.DraftMessageIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d021d00> in com.apple.siri.SiriVideoAppIntents.InternalFindVideoIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d022000> in com.apple.calls.PhoneAppIntentsExtension.StartTelephonyCallIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d023300> in com.apple.MobileSMS.SendMessageIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d022300> in com.apple.mobilecal.EditEventIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d022500> in com.apple.mobilecal.EditEventIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d21c800> in com.apple.siri.AudioAppIntentsExtension.SiriKitPlayAudioIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d21e000> in com.apple.Maps.StartNavigationIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d21e100> in com.apple.Maps.StartNavigationIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFConfiguredSystemActionParameter: 0x10d23a700> in com.apple.shortcuts.RunShortcutConfigurationIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter) for locale: en
+Skipping: <WFUnionParameter: 0x10d24f900> in com.apple.siri.AudioAppIntentsExtension.SiriKitAddAudioToLibraryIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFSSHKeyParameter: 0x10d28da40> in is.workflow.actions.runsshscript: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFSSHKeyParameter) for locale: en
+Failed to index parameter type: <WFEvernoteTagsTagFieldParameter: 0x10d2c4500> in is.workflow.actions.evernote.new: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFEvernoteTagsTagFieldParameter) for locale: en
+Failed to index parameter type: <WFTagFieldParameter: 0x10d290ee0> in is.workflow.actions.addnewreminder: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFTagFieldParameter) for locale: en
+Failed to index parameter type: <WFLinkDynamicOptionsEnumerationParameter: 0x10d297780> in com.apple.siri.AudioAppIntentsExtension.WholeHouseAudioPlaceholderIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem for locale: en
+Failed to index parameter type: <WFConfiguredSystemActionParameter: 0x10d28fb40> in com.apple.shortcuts.WFShortcutsSmallWidgetConfigurationIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter) for locale: en
+Skipping: <WFUnionParameter: 0x10d2c6500> in com.apple.calls.PhoneAppIntentsExtension.StartFaceTimeCallIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFLinkDynamicOptionsEnumerationParameter: 0x10d2f5e00> in com.apple.gms.GenerativePartnerPrototypeExtension.GenerativePartnerPrototypeIntentChatGPT: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem for locale: en
+Failed to index parameter type: <WFLinkDynamicOptionsEnumerationParameter: 0x10d2f5f80> in com.apple.gms.GenerativePartnerPrototypeExtension.GenerativePartnerPrototypeIntentChatGPT: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem for locale: en
+Failed to index parameter type: <WFContentArrayParameter: 0x10d293aa0> in is.workflow.actions.list: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFContentArrayParameter) for locale: en
+Failed to index parameter type: <WFMailSenderPickerParameter: 0x10d2f6580> in is.workflow.actions.sendemail: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingIntentDescription for locale: en
+Skipping: <WFUnionParameter: 0x10d382200> in com.apple.siri.AudioAppIntentsExtension.SiriKitUpdateAudioAffinityIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFInputSurfaceParameter: 0x10d385140> in is.workflow.actions.input: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFInputSurfaceParameter) for locale: en
+Failed to index parameter type: <WFLinkDynamicOptionsEnumerationParameter: 0x10d3b6100> in com.apple.siri.SiriVideoAppIntents.CrossDevicePlaceholderIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem for locale: en
+Skipping: <WFUnionParameter: 0x10d3dd200> in com.apple.Maps.UpdateNavigationIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d3dec00> in com.apple.mobilesafari.CreateNewTabGroup because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d3dfc00> in com.apple.calls.PhoneAppIntentsExtension.CreateConferenceCallIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d848d00> in com.apple.siri.AudioAppIntentsExtension.SiriKitAddAudioToPlaylistIntent because union values themselves are not treated as a type
+Skipping: <WFUnionParameter: 0x10d849500> in com.apple.siri.SiriPhoneAppIntentsExtension.SiriKitStartCallIntent because union values themselves are not treated as a type
+Failed to index parameter type: <WFExpandingParameter: 0x10d821a40> in is.workflow.actions.encodemedia: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFExpandingParameter) for locale: en
+Type indexing (params + content items) took 11.566299s
+Failed to check availability in Spotlight for action is.workflow.actions.lightroom.import: Error Domain=NSOSStatusErrorDomain Code=-10814 "(null)" UserInfo={_LSLine=159, _LSFunction=+[LSBundleRecord bundleRecordWithBundleIdentifier:allowPlaceholder:error:], _LSFile=LSBundleRecord.mm, NSUnderlyingError=0x10ea2b0c0 {Error Domain=NSOSStatusErrorDomain Code=-10814 "Unable to find this application extension record in the Launch Services database." UserInfo={_LSLine=659, _LSFunction=_LSPluginFindWithPlatformInfo, _LSFile=LSPluginBundle.mm, NSDebugDescription=Unable to find this application extension record in the Launch Services database., SK=com.adobe.lrmobile, IS=false}}}
+Failed to index action parameter: <WFConfiguredSystemActionParameter: 0x10d23a700> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter)
+Failed to index action parameter: <WFConfiguredSystemActionParameter: 0x10bd5f240> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter)
+is.workflow.actions.useractivity.open WFOpenUserActivityAction: Skipped because: [donation-based action]
+Failed to index action parameter: <WFLinkDynamicOptionsEnumerationParameter: 0x10d3b6100> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem
+is.workflow.actions.sirikit.donation.handle WFHandleDonatedIntentAction: Skipped because: [donation-based action]
+Failed to index action parameter: <WFConfiguredSystemActionParameter: 0x10bf270c0> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter)
+Failed to index action parameter: <WFLinkDynamicOptionsEnumerationParameter: 0x10d297780> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem
+Failed to index action parameter: <WFEvernoteTagsTagFieldParameter: 0x10d2c4500> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFEvernoteTagsTagFieldParameter)
+Failed to check availability in Spotlight for action is.workflow.actions.workout.end: Error Domain=NSOSStatusErrorDomain Code=-10814 "(null)" UserInfo={_LSLine=159, _LSFunction=+[LSBundleRecord bundleRecordWithBundleIdentifier:allowPlaceholder:error:], _LSFile=LSBundleRecord.mm, NSUnderlyingError=0x10ecab000 {Error Domain=NSOSStatusErrorDomain Code=-10814 "Unable to find this application extension record in the Launch Services database." UserInfo={_LSLine=659, _LSFunction=_LSPluginFindWithPlatformInfo, _LSFile=LSPluginBundle.mm, NSDebugDescription=Unable to find this application extension record in the Launch Services database., SK=com.apple.SessionTrackerApp, IS=false}}}
+Failed to check availability in Spotlight for action is.workflow.actions.workout.start: Error Domain=NSOSStatusErrorDomain Code=-10814 "(null)" UserInfo={_LSLine=159, _LSFunction=+[LSBundleRecord bundleRecordWithBundleIdentifier:allowPlaceholder:error:], _LSFile=LSBundleRecord.mm, NSUnderlyingError=0x10ecaafd0 {Error Domain=NSOSStatusErrorDomain Code=-10814 "Unable to find this application extension record in the Launch Services database." UserInfo={_LSLine=659, _LSFunction=_LSPluginFindWithPlatformInfo, _LSFile=LSPluginBundle.mm, NSDebugDescription=Unable to find this application extension record in the Launch Services database., SK=com.apple.SessionTrackerApp, IS=false}}}
+Failed to index action parameter: <WFLinkDynamicOptionsEnumerationParameter: 0x10bec5380> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem
+Failed to index action parameter: <WFEvernoteTagsTagFieldParameter: 0x10bdfe500> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFEvernoteTagsTagFieldParameter)
+Failed to index action parameter: <WFPhotoItemCollectionParameter: 0x10bf59dc0> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFPhotoItemCollectionParameter)
+Failed to index action parameter: <WFContentArrayParameter: 0x10d293aa0> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFContentArrayParameter)
+Failed to index action parameter: <WFMailSenderPickerParameter: 0x10d2f6580> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingIntentDescription
+Failed to check availability in Spotlight for action is.workflow.actions.sendemail: Error Domain=NSOSStatusErrorDomain Code=-10814 "(null)" UserInfo={_LSLine=159, _LSFunction=+[LSBundleRecord bundleRecordWithBundleIdentifier:allowPlaceholder:error:], _LSFile=LSBundleRecord.mm, NSUnderlyingError=0x10ecabde0 {Error Domain=NSOSStatusErrorDomain Code=-10814 "Unable to find this application extension record in the Launch Services database." UserInfo={_LSLine=659, _LSFunction=_LSPluginFindWithPlatformInfo, _LSFile=LSPluginBundle.mm, NSDebugDescription=Unable to find this application extension record in the Launch Services database., SK=com.apple.mobilemail, IS=false}}}
+Failed to index action parameter: <WFDynamicTagFieldParameter: 0x10bdfc000> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFDynamicTagFieldParameter)
+Failed to index action parameter: <WFDynamicTagFieldParameter: 0x10bdfc100> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFDynamicTagFieldParameter)
+is.workflow.actions.repeat.each WFForEachRepeatAction: Skipped because: [control flow]
+is.workflow.actions.repeat.count WFFiniteRepeatAction: Skipped because: [control flow]
+Failed to index action parameter: <WFTagFieldParameter: 0x10d290ee0> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFTagFieldParameter)
+Failed to index action parameter: <WFInputSurfaceParameter: 0x10d385140> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFInputSurfaceParameter)
+is.workflow.actions.choosefrommenu WFChooseFromMenuAction: Skipped because: [control flow]
+is.workflow.actions.conditional WFConditionalAction: Skipped because: [control flow]
+Failed to index action parameter: <WFSSHKeyParameter: 0x10d28da40> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFSSHKeyParameter)
+Failed to index action parameter: <WFLinkDynamicOptionsEnumerationParameter: 0x10d2f5e00> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem
+Failed to index action parameter: <WFLinkDynamicOptionsEnumerationParameter: 0x10d2f5f80> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.missingLinkParameterContentItem
+Failed to index action parameter: <WFConfiguredSystemActionParameter: 0x10d28fb40> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFConfiguredSystemActionParameter)
+Action indexing took 9.397390s
+Indexed: 1239
+Errored: 0
+Skipped: [donation-based action: 2, control flow: 4]
+Bundle cache: 22952 hits, 103 misses
+   donation-based action: 2
+   control flow: 4
+Finished in 28.176489s
+-[WFIsolatedShortcutRunner unaliveProcess] Releasing sandbox extensions
+-[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
+-[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
+Indexing for request: <WFToolKitIndexingRequest: 0x1018540c0>, changeset: .partial(updatedCount: 3 removedCount: 0 updated: ["com.apple.Bridge", "com.apple.SystemIntents", "com.apple.mobileslideshow"], removed: [], provenance: [VoiceShortcutClient.ToolKitIndexingReason.Changeset.Provenance.appIntentsChange(<LinkSnapshot> ["com.apple.SystemIntents", "com.apple.ShortcutsActions", "com.apple.mobileslideshow", "com.apple.intelligenceplatform.IntelligencePlatform.IntelligencePlatformDataActionsAppIntentsExtension", "com.apple.SensitiveContentAnalysis.SensitiveContentAnalysisConfigurationExtension", "com.apple.Fitness", "com.apple.siri.SiriCrisisAppIntentsExtension", "com.apple.mobilesafari", "com.apple.mobilecal", "com.apple.homed", "com.apple.Maps.MapsSettingsAppIntents", "com.apple.siri.SiriVideoAppIntents", "com.apple.Bridge", "com.apple.Maps", "com.apple.springboard", "com.apple.GameCenter.Settings.DeviceExpertExtension", "com.apple.TVRemoteApp", "com.apple.MobileSMS", "com.apple.intelligenceplatformd", "com.apple.musicrecogniti<…>, priority: <decode: missing data>
+indexing: the changeset is expensive, filling Link provider in full
+Failed to index parameter type: <WFPhotoItemCollectionParameter: 0x1069c2220> in com.apple.mobileslideshow.PLPhotosReliveWidgetConfigurationIntent: (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFPhotoItemCollectionParameter) for locale: en
+Type indexing (params + content items) took 1.993615s
+Failed to index action parameter: <WFPhotoItemCollectionParameter: 0x1069c2220> due to (extension in ActionKit):__C.WFParameter.ToolKitConversionError.incompatibleParameterType(WFPhotoItemCollectionParameter)
+Action indexing took 0.639085s
+Indexed: 132
+Errored: 0
+Skipped: [:]
+Bundle cache: 1618 hits, 8 misses
+Finished in 6.495582s
+-[WFIsolatedShortcutRunner unaliveProcess] Releasing sandbox extensions
+Xcode build done.                                           50.4s
+[IMPORTANT:flutter/shell/platform/darwin/graphics/FlutterDarwinContextMetalImpeller.mm(45)] Using the Impeller rendering backend (Metal).
+Plugin FoldablePlugin uses deprecated application lifecycle events. Please contact plugin maintainers and request UIScene lifecycle support. This will be required in a future version of Flutter. See https://docs.flutter.dev/release/breaking-changes/uiscenedelegate#migration-guide-for-flutter-plugins
+flutter: [DUO_PROBE] App.initState at 2026-09-21T10:41:53.108284
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":1,"size":{"width":402.0,"height":874.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1206.0,"height":2622.0},"padding":{"left":0.0,"top":62.0,"right":0.0,"bottom":34.0},"paddingAsymmetric":false,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":62.0,"right":0.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":402.0,"maxWidth":402.0,"minHeight":874.0,"maxHeight":874.0},"lifecycle":{"state":"none","at":"-"},"portraitLocked":false}
+flutter: [DUO_PROBE] StatePage.initState instance=1 at 2026-09-21T10:41:53.457839
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-21T10:41:53.944892
+Syncing files to device iPhone 18 Pro...                        
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-21T10:41:54.352755
+Syncing files to device iPhone 18 Pro...                           223ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on iPhone 18 Pro is available at: http://127.0.0.1:52075/RP0u27LPyOo=/
+The Flutter DevTools debugger and profiler on iPhone 18 Pro is available at: http://127.0.0.1:52075/RP0u27LPyOo=/devtools/?uri=ws://127.0.0.1:52075/RP0u27LPyOo=/ws
+-[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
+-[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
+Indexing for request: <WFToolKitIndexingRequest: 0x1044540c0>, changeset: .partial(updatedCount: 1 removedCount: 0 updated: ["com.example.duoProbe"], removed: [], provenance: [VoiceShortcutClient.ToolKitIndexingReason.Changeset.Provenance.launchServicesSnapshot(<LaunchServicesSnapshot uuid=CBDB7611-961E-42EC-9D20-6B155E852295, v=728)> ["com.apple.AppDistributionLaunchAngel", "com.apple.UIKit.FontPickerUIService", "com.apple.gamecenter.GameCenterUIService", "com.apple.mobilemail.MailSettingsIntentsExtension", "com.apple.settingsandcoreapps.SoundAndHapticsControls", "com.apple.datadetectors.DDActionsService", "com.apple.Animoji.StickersApp", "com.apple.TDGSharingViewService", "com.apple.LoginUI", "com.apple.PosterBoard", "com.apple.CredentialSharingService", "com.apple.DefaultAppsSettingsIntents", "com.apple.NeighborhoodActivityConduitService.NeighborhoodActivityConduitIntentsExtension", "com.apple.CTNotifyUIService", "com.apple.SubcredentialUIService", "com.apple.Passwords.PasswordManagerAppIntentsExtension", "com.apple.FontInst<…>, priority: <decode: missing data>
+Type indexing (params + content items) took 0.000098s
+Action indexing took 0.000035s
+Indexed: 0
+Errored: 0
+Skipped: [:]
+Bundle cache: 0 hits, 0 misses
+Finished in 0.891799s
+-[WFIsolatedShortcutRunner unaliveProcess] Releasing sandbox extensions

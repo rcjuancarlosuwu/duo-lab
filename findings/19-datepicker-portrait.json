@@ -1,0 +1,47 @@
+{
+    "condition": "19-datepicker-portrait",
+    "rootBuilds": 5,
+    "size": {
+        "width": 669.0,
+        "height": 951.0
+    },
+    "devicePixelRatio": 3.0,
+    "physicalPixels": {
+        "width": 2007.0,
+        "height": 2853.0
+    },
+    "padding": {
+        "left": 0.0,
+        "top": 82.0,
+        "right": 0.0,
+        "bottom": 34.0
+    },
+    "paddingAsymmetric": false,
+    "viewInsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+    },
+    "viewPadding": {
+        "left": 0.0,
+        "top": 82.0,
+        "right": 0.0,
+        "bottom": 34.0
+    },
+    "displayFeatures": [],
+    "orientation": "portrait",
+    "textScalerScaleOf14": 14.0,
+    "platformBrightness": "light",
+    "rootConstraints": {
+        "minWidth": 669.0,
+        "maxWidth": 669.0,
+        "minHeight": 951.0,
+        "maxHeight": 951.0
+    },
+    "lifecycle": {
+        "state": "resumed",
+        "at": "2026-09-21T15:48:53.859190"
+    },
+    "portraitLocked": false
+}

@@ -1,0 +1,111 @@
+Launching lib/main.dart on iPhone Duo in debug mode...
+Running Xcode build...                                          
+Xcode build done.                                           17.8s
+[IMPORTANT:flutter/shell/platform/darwin/graphics/FlutterDarwinContextMetalImpeller.mm(45)] Using the Impeller rendering backend (Metal).
+Plugin FoldablePlugin uses deprecated application lifecycle events. Please contact plugin maintainers and request UIScene lifecycle support. This will be required in a future version of Flutter. See https://docs.flutter.dev/release/breaking-changes/uiscenedelegate#migration-guide-for-flutter-plugins
+flutter: [DUO_PROBE] commandFile /Users/rcjuancarlosuwu/Library/Developer/CoreSimulator/Devices/AA16FBB4-F351-4AD9-BBF5-45562B10CFDD/data/Containers/Data/Application/8A12C7E7-EAC6-45D1-8C24-2EDAA6537531/tmp/duo_probe_command
+flutter: [DUO_PROBE] App.initState at 2026-09-28T09:00:10.850087
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":1,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"none","at":"-"},"portraitLocked":false}
+flutter: [DUO_PROBE] StatePage.initState instance=1 at 2026-09-28T09:00:11.424157
+flutter: [DUO_PROBE] foldable connection=waiting isFoldable=null status=null angle=null regions=null
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 412.0 x 80.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 412.0 x 58.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:00:13.164804
+flutter: [DUO_PROBE] foldable connection=active isFoldable=false status=unknown angle=null regions=2
+Syncing files to device iPhone Duo...                              655ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on iPhone Duo is available at: http://127.0.0.1:53190/gPwt0G386zY=/
+The Flutter DevTools debugger and profiler on iPhone Duo is available at: http://127.0.0.1:53190/gPwt0G386zY=/devtools/?uri=ws://127.0.0.1:53190/gPwt0G386zY=/ws
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=closed angle=0.0 regions=2
+flutter: [DUO_PROBE] lifecycle=resumed at 2026-09-28T09:00:36.844432
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":2,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:00:37.428103
+flutter: [DUO_PROBE] command orient/landscape
+flutter: [DUO_PROBE] setPreferredOrientations landscape -> [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":3,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=closed angle=0.0 regions=2
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:00:45.585293
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":3,"size":{"width":678.0,"height":466.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2034.0,"height":1398.0},"padding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":678.0,"maxWidth":678.0,"minHeight":466.0,"maxHeight":466.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 624.0 x 48.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 624.0 x 48.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 624.0 x 80.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 624.0 x 58.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:00:45.800179
+-[WFIsolatedShortcutRunner init] Taking sandbox extensions for execution
+-[WFIsolatedShortcutRunner init]_block_invoke Sandbox extensions acquired
+Indexing for request: <WFToolKitIndexingRequest: 0x10184c360>, changeset: .partial(updatedCount: 1 removedCount: 0 updated: ["com.example.duoProbe"], removed: [], provenance: [VoiceShortcutClient.ToolKitIndexingReason.Changeset.Provenance.launchServicesSnapshot(<LaunchServicesSnapshot uuid=6C9EF79B-ED3A-438C-B661-FB3201677F55, v=688)> ["com.apple.Preferences.DictionarySettingsExtension", "com.apple.Preferences", "com.apple.CredentialSharingService", "com.apple.mobiletimer.StopwatchIntentsExtension", "com.apple.BarcodeScanner", "com.apple.GradientPoster", "com.apple.AXRemoteViewService", "com.apple.Spotlight", "com.apple.Passwords.PasswordSettingsAppIntentsExtension", "com.apple.AskToUIHost", "com.apple.PosterBoard", "com.apple.AppleAccountIntents", "com.apple.siri.parsec.HashtagImagesApp", "com.apple.GuestUserHandoverSetup", "com.apple.FaceTimeLinkTrampoline", "com.apple.AAUIViewService", "com.apple.camera.settings.CameraSettingsAppIntentsExtension", "com.apple.DocumentsApp.DocumentAppIntents", "com.apple.FontServices.FontInten<…>, priority: <decode: missing data>
+Type indexing (params + content items) took 0.003449s
+Action indexing took 0.001255s
+Indexed: 0
+Errored: 0
+Skipped: [:]
+Bundle cache: 0 hits, 0 misses
+Finished in 2.187516s
+-[WFIsolatedShortcutRunner unaliveProcess] Releasing sandbox extensions
+flutter: [DUO_PROBE] command orient/portrait
+flutter: [DUO_PROBE] setPreferredOrientations portrait -> [DeviceOrientation.portraitUp]
+Failed to change device orientation: Error Domain=UISceneErrorDomain Code=101 "None of the requested orientations are supported by the view controller. Requested: portrait; Supported: landscapeLeft, landscapeRight" UserInfo={NSLocalizedDescription=None of the requested orientations are supported by the view controller. Requested: portrait; Supported: landscapeLeft, landscapeRight}
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":4,"size":{"width":678.0,"height":466.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2034.0,"height":1398.0},"padding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":678.0,"maxWidth":678.0,"minHeight":466.0,"maxHeight":466.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":true}
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=closed angle=0.0 regions=2
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:01.109844
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":4,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":true}
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 412.0 x 80.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 412.0 x 58.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:01.167864
+flutter: [DUO_PROBE] command orient/free
+flutter: [DUO_PROBE] setPreferredOrientations free -> [DeviceOrientation.portraitUp, DeviceOrientation.landscapeLeft, DeviceOrientation.portraitDown, DeviceOrientation.landscapeRight]
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":5,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=closed angle=0.0 regions=2
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:12.715111
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":5,"size":{"width":678.0,"height":466.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2034.0,"height":1398.0},"padding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":84.0,"top":0.0,"right":0.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":678.0,"maxWidth":678.0,"minHeight":466.0,"maxHeight":466.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 624.0 x 48.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 624.0 x 48.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 624.0 x 80.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 624.0 x 58.0 available=624.0 screenWidth=678.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:12.942859
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=closed angle=0.0 regions=2
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:13.286604
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":5,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 412.0 x 48.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 412.0 x 80.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 412.0 x 58.0 available=412.0 screenWidth=466.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:01:13.385557
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=partiallyOpen angle=63.38302230834962 regions=2
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=fullyOpen angle=180.0 regions=2
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.295075
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.302518
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":5,"size":{"width":466.0,"height":678.0},"devicePixelRatio":3.0,"physicalPixels":{"width":1398.0,"height":2034.0},"padding":{"left":0.0,"top":82.0,"right":0.0,"bottom":34.0},"paddingAsymmetric":false,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":82.0,"right":0.0,"bottom":34.0},"displayFeatures":[],"orientation":"portrait","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":466.0,"maxWidth":466.0,"minHeight":678.0,"maxHeight":678.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.363002
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.459735
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.483207
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.485950
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":5,"size":{"width":951.0,"height":669.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2853.0,"height":2007.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":951.0,"maxWidth":951.0,"minHeight":669.0,"maxHeight":669.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=fullyOpen angle=180.0 regions=2
+flutter: [DUO_PROBE] navbar "TabBar (in AppBar)" rendered 897.0 x 48.0 available=897.0 screenWidth=951.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "TabBar (bare)" rendered 897.0 x 48.0 available=897.0 screenWidth=951.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "NavigationBar (Material 3)" rendered 897.0 x 80.0 available=897.0 screenWidth=951.0 fillsAvailable=true
+flutter: [DUO_PROBE] navbar "BottomNavigationBar (fixed)" rendered 897.0 x 58.0 available=897.0 screenWidth=951.0 fillsAvailable=true
+flutter: [DUO_PROBE] didChangeMetrics at 2026-09-28T09:05:46.575890
+flutter: [DUO_PROBE] foldable connection=active isFoldable=true status=fullyOpen angle=180.0 regions=2
+flutter: [DUO_PROBE] command orient/portrait
+Failed to change device orientation: Error Domain=UISceneErrorDomain Code=101 "The current windowing mode does not allow for programmatic changes to interface orientation." UserInfo={NSLocalizedDescription=The current windowing mode does not allow for programmatic changes to interface orientation.}
+flutter: [DUO_PROBE] setPreferredOrientations portrait -> [DeviceOrientation.portraitUp]
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":6,"size":{"width":951.0,"height":669.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2853.0,"height":2007.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":951.0,"maxWidth":951.0,"minHeight":669.0,"maxHeight":669.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":true}
+flutter: [DUO_PROBE] command orient/landscape
+Failed to change device orientation: Error Domain=UISceneErrorDomain Code=101 "The current windowing mode does not allow for programmatic changes to interface orientation." UserInfo={NSLocalizedDescription=The current windowing mode does not allow for programmatic changes to interface orientation.}
+flutter: [DUO_PROBE] setPreferredOrientations landscape -> [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]
+flutter: [DUO_PROBE] snapshot {"condition":"","rootBuilds":7,"size":{"width":951.0,"height":669.0},"devicePixelRatio":3.0,"physicalPixels":{"width":2853.0,"height":2007.0},"padding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"paddingAsymmetric":true,"viewInsets":{"left":0.0,"top":0.0,"right":0.0,"bottom":0.0},"viewPadding":{"left":0.0,"top":0.0,"right":84.0,"bottom":34.0},"displayFeatures":[],"orientation":"landscape","textScalerScaleOf14":14.0,"platformBrightness":"light","rootConstraints":{"minWidth":951.0,"maxWidth":951.0,"minHeight":669.0,"maxHeight":669.0},"lifecycle":{"state":"resumed","at":"2026-09-28T09:00:36.844432"},"portraitLocked":false}
+Lost connection to device.

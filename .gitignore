@@ -1,0 +1,10 @@
+.DS_Store
+build/
+.dart_tool/
+.flutter-plugins*
+.idea/
+*.iml
+android/.gradle/
+android/local.properties
+ios/Pods/
+ios/Flutter/ephemeral/

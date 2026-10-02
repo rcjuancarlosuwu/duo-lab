@@ -1,0 +1,47 @@
+{
+    "condition": "20-nav-bars-outer",
+    "rootBuilds": 3,
+    "size": {
+        "width": 466.0,
+        "height": 678.0
+    },
+    "devicePixelRatio": 3.0,
+    "physicalPixels": {
+        "width": 1398.0,
+        "height": 2034.0
+    },
+    "padding": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 84.0,
+        "bottom": 34.0
+    },
+    "paddingAsymmetric": true,
+    "viewInsets": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 0.0,
+        "bottom": 0.0
+    },
+    "viewPadding": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 84.0,
+        "bottom": 34.0
+    },
+    "displayFeatures": [],
+    "orientation": "portrait",
+    "textScalerScaleOf14": 14.0,
+    "platformBrightness": "light",
+    "rootConstraints": {
+        "minWidth": 466.0,
+        "maxWidth": 466.0,
+        "minHeight": 678.0,
+        "maxHeight": 678.0
+    },
+    "lifecycle": {
+        "state": "resumed",
+        "at": "2026-09-28T07:18:43.304166"
+    },
+    "portraitLocked": false
+}
