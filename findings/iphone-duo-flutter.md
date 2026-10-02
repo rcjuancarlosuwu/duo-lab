@@ -171,6 +171,37 @@ seconds apart, on the same screen.
 It is worth having regardless of the Duo, as a cheap stand-in for a narrow pane
 on a big display.
 
+### The three of them together
+
+All three fixes fit in one `build` method, and none of them are Duo-specific:
+
+```dart
+@override
+Widget build(BuildContext context) {
+  // 1. Size is read here, not in initState. The Duo resizes mid-session and
+  //    the top of the tree never rebuilds.
+  return LayoutBuilder(
+    builder: (context, constraints) {
+      // 2. Decide on available width, not on device size. Split View on the
+      //    inner display hands you 469 logical pixels.
+      final useWideLayout = constraints.maxWidth >= 600;
+
+      // 3. The reserved inset sits on one edge only, and which edge depends on
+      //    posture. Read it rather than assuming it is symmetric.
+      final inset = MediaQuery.paddingOf(context);
+
+      return Padding(
+        padding: EdgeInsets.only(
+          left: inset.left > 16 ? inset.left : 16,
+          right: inset.right > 16 ? inset.right : 16,
+        ),
+        child: useWideLayout ? const TwoPaneView() : const SinglePaneView(),
+      );
+    },
+  );
+}
+```
+
 ---
 
 ## The thing Flutter cannot do yet
