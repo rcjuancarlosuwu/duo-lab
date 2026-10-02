@@ -16,9 +16,6 @@ situations on the iPhone Duo simulator: both displays, all three postures,
 rotated, split beside another app, with the keyboard up. A screenshot and a full
 data dump of each.
 
-Here is what changes, what we confirmed, what we could not reproduce, and what
-we would do about it.
-
 ---
 
 ## The short version
@@ -34,6 +31,9 @@ we would do about it.
   filed in September, five involve the keyboard or text fields.
 - **Do not build anything hinge-aware yet.** The upstream work is real, but it
   will not be in a stable release before the device ships.
+- **Your AI agent will get this wrong, quietly.** The device is newer than its
+  training data, and the plausible answer it gives you runs without error and
+  does nothing.
 
 ---
 
@@ -43,19 +43,18 @@ A 5.4-inch display on the outside when it is closed. A 7.6-inch display on the
 inside when you open it. A hinge down the middle. Announced September 9, on sale
 October 23.
 
-The honest framing for anyone deciding where a team spends its next sprint: this
-is a first-generation, premium device, and it will not be a large share of your
-users in year one. Counterpoint Research forecast in April that Apple would take
-46% of the North American foldable market in 2026, which sounds enormous until
-you remember that foldables are still a small slice of all phones.
+The honest framing for anyone deciding where a sprint goes: this is a
+first-generation premium device, and it will not be a large share of your users
+in year one. Counterpoint Research forecast Apple taking 46% of the North
+American foldable market in 2026, which sounds enormous until you remember that
+foldables are still a small slice of all phones.
 
-What makes it worth the attention anyway is that the work it asks for is not
-Duo-specific. Almost everything below also improves your app on iPad, in
-landscape, in split-screen, and on the web. The Duo is the deadline, not the
-reason.
+What makes it worth the attention anyway is that the work is not Duo-specific.
+Almost everything below also improves your app on iPad, in landscape, in
+split-screen and on the web. The Duo is the deadline, not the reason.
 
-Here is what your app actually receives, in logical pixels, which is the unit
-Flutter lays out in:
+Here is what your app actually receives, in logical pixels, the unit Flutter
+lays out in:
 
 | Situation | Size your app gets | Safe-area padding |
 |---|---|---|
@@ -326,20 +325,20 @@ player a way to fill the space.*
 
 ## What did not break
 
-We think negative results are worth publishing, because they save someone a day.
+Negative results are worth publishing, because they save someone a day.
 
-**Navigation bars are fine.** There is a reported issue saying tab bar width gets
-truncated when folded. Flutter has four different widgets that could reasonably
-be called a tab bar, so we measured all four, on both displays. Eight
-measurements. Every one filled the width it was given, exactly.
+**Navigation bars are fine.** A reported issue says tab bar width gets truncated
+when folded. Flutter has four widgets that could reasonably be called a tab bar,
+so we measured all four on both displays. Eight measurements, every one filling
+the width it was given, exactly.
 
-**The App Switcher preview is fine.** Another reported issue says the preview
-renders distorted after changing the device mode. Ours rendered correctly after
-crossing all three postures.
+**The App Switcher preview is fine.** Another issue says the preview renders
+distorted after a device mode change. Ours rendered correctly after crossing all
+three postures.
 
-Neither result closes those issues. A negative in one setup says little about
-the setup the reporter had. But if you were about to budget time for either, it
-may not be where your problem is.
+Neither result closes those issues, since a negative in one setup says little
+about the reporter's. But if you were about to budget time for either, it may
+not be where your problem is.
 
 **The black screen during folding is not yours to fix.** The screen does go dark
 for a few seconds. Flutter's position is on record: the issue was closed in
@@ -350,36 +349,30 @@ nothing we can do here."
 
 ## The packages, and what is coming
 
-Several Flutter packages appeared within days of the announcement. Two are worth
-knowing about.
+[`foldable`](https://pub.dev/packages/foldable) bridges the gap. It reports
+hinge angle, posture and the fold and camera regions, works in the simulator
+with no hardware, and its author also wrote the upstream fix. We used it for
+every fold measurement here.
 
-[`foldable`](https://pub.dev/packages/foldable) bridges the gap. It reports hinge
-angle, posture, and the fold and camera regions, and it works in the simulator
-with no hardware needed. We used it for every fold measurement in this lab, and
-its author also wrote the upstream fix.
-
-We would not call it verified, and we want to be precise about why. It agreed
-with Flutter's own padding values in every state we checked. It also gave us two
-readings that said the device was closed while reporting a non-zero angle, and
-three where it said there was no foldable at all. Without physical hardware
-there is nothing to check it against.
+We would not call it verified, and want to be precise about why. It agreed with
+Flutter's own padding values in every state we checked. It also gave us two
+readings calling the device closed while reporting a non-zero angle, and three
+where it said there was no foldable at all. Without physical hardware there is
+nothing to check it against.
 
 [`dual_screen`](https://pub.dev/packages/dual_screen), which used to provide the
-`TwoPane` widget, is Android-only and has not been updated since 2023. It does
-not help here.
+`TwoPane` widget, is Android-only and unchanged since 2023. It does not help.
 
 As for Flutter itself: the proposal to report display features on iOS was filed
 the day Apple announced the device. A pull request implementing it is open, out
-of draft, with a reviewer assigned, and not merged. A second one, which animates
-content between sub-screens as the fold changes, is in the same state.
+of draft, with a reviewer assigned, and not merged. A second one, animating
+content between sub-screens as the fold changes, is in the same state. And
+reporting the fold is only half of it; a separate request asks for the framework
+to be notified when those regions move, which is what an app would need in order
+to react.
 
-And reporting the fold is only half of it. A separate open request asks for the
-framework to be notified when those regions move, which is what an app would
-actually need in order to react.
-
-Flutter stable is 3.47.5, released September 18, with nothing foldable-specific
-in it. The device ships in three weeks. Watch that work, but do not plan around
-it.
+Flutter stable is 3.47.5, with nothing foldable-specific in it. The device ships
+in three weeks. Watch that work, but do not plan around it.
 
 ---
 
@@ -411,10 +404,10 @@ it.
    cannot rely on.
 
 One practical warning before anyone blocks out that afternoon. The iPhone Duo
-simulator only exists in Xcode 27.1, which is still in beta, and it needs the
-iOS 27.1 runtime specifically. Creating the device against 27.0 fails outright.
-That runtime cannot be downloaded from the command line, so it has to come
-through the Xcode interface. Budget setup time.
+needs the iOS 27.1 simulator runtime specifically, and creating the device
+against 27.0 fails outright. That runtime currently ships with Xcode 27.1,
+which is still in beta, and it cannot be downloaded from the command line, so
+it has to come through the Xcode interface. Budget setup time.
 
 And one thing worth telling your QA lead: **this cannot be automated today.**
 There is no command-line control for the hinge anywhere in Apple's simulator
@@ -425,24 +418,83 @@ the manual pass deliberately rather than assuming CI will catch it later.
 
 ---
 
+## If you are going to hand this to an AI agent
+
+Most teams will. So it is worth being specific about where an agent helps here
+and where it fails, because on this device failure does not look like an error.
+
+**It will write hinge code that does nothing.** Apple announced the Duo on
+September 9. Any model trained before that answers from the foldables in its
+training data, which are all Android. So it reaches for
+`MediaQuery.displayFeatures`, builds a correct layout around it, and hands you
+code that compiles, runs, passes review and has no effect, because that list is
+empty on iOS. No exception, no console warning, no failing test. The code is
+idiomatic and the API is real. The one sentence that invalidates it, *"This is
+populated only on Android"*, is a line in the class reference the agent had no
+reason to open. Try it once on your own codebase to see how convincing it looks.
+
+**It will suggest the wrong package.** `dual_screen` has years of tutorials
+behind it, and is Android-only. `foldable` is five days old, so it cannot be in
+any current model's weights; an agent that names it is guessing. Treat a guessed
+package name as a security question rather than a correctness one, because
+attackers register plausible names that models hallucinate. A person opens
+pub.dev before anything reaches a `pubspec.yaml`.
+
+**What it got wrong here.** We used an agent throughout this lab, and its
+mistake is more useful than its output. The first pass at the orientation
+finding wrote *"No error, no exception, no signal of any kind."* False:
+`UISceneErrorDomain Code=101` was in the log ten times. The same pass said the
+call works on the outer display; all twelve logged calls were made on the inner
+one, and the outer log was gone because an early version of the harness wrote
+with `tee` instead of `tee -a`.
+
+Two failures worth separating. It read absence of evidence as evidence of
+absence, because nothing in its own summary said "error", so it wrote "no
+error", and the grep that settles it takes two seconds. And it trusted a harness
+it had written itself: a log that truncates silently produces a dataset that
+looks complete, and the missing data left no hole in the shape of a hole. We
+caught both by re-running the test a week later. The fix was not a better
+prompt. It was a second measurement.
+
+**The fold cannot be delegated.** There is no `simctl` verb for posture: the
+only way to fold the device is three buttons in a DeviceHub window, clicked by a
+person. Everything else automated cleanly. We did try driving the GUI with
+AppleScript, and it works, and it is hostile, taking over the keyboard and
+pointer of whoever is sitting at the machine. So the highest-value test here
+needs a human hand and human eyes. An agent cannot type into a form on a folding
+phone, and it cannot fold the phone.
+
+**How to ask.** Paste the measurements table above rather than asking for the
+numbers; it replaces what the model would otherwise invent. Ask for searches,
+not architecture: "find every `MediaQuery` read inside `initState`, with file
+and line" is work an agent does better than a person, while "make the app adapt
+to the fold" is work it fails at confidently. Require a file and line for every
+claim. Put one line in your `CLAUDE.md` or `AGENTS.md` saying what it cannot
+know, that the Duo shipped after its cutoff, that `displayFeatures` is empty on
+iOS, and not to propose `dual_screen`. And say explicitly that "I could not
+verify this" is an acceptable answer, because a model not given permission to be
+uncertain will resolve uncertainty by producing confident prose, which is
+exactly how that orientation sentence got written.
+
+The Dart and Flutter teams now ship official agent skills, installed with
+`npx skills add flutter/agent-plugins --skill '*' --agent universal --yes`. Two
+of the ten are relevant here, one for responsive layouts and one for fixing
+layout issues. None covers foldables, which is this article's gap one layer up.
+
 ## For the people deciding
 
-If you are weighing this against everything else on the roadmap, here is the
-shape of it.
-
 **Risk is moderate, not severe.** Nothing crashes. The failure mode is screens
-that look wrong, forms that lose focus, and video with large black bars. It is a
+that look wrong, forms that lose focus and video with large black bars. A
 quality problem, not an outage.
 
-**The effort is small and mostly reusable.** The four searches above are a day of
-work for one engineer on a typical codebase. Everything they fix also improves
-the app on iPad, in landscape, and in split-screen, on hardware you already
-support.
+**The effort is small and mostly reusable.** The four searches above are a day
+of work for one engineer, and everything they fix also improves the app on
+iPad, in landscape and in split-screen, on hardware you already support.
 
 **The fold itself is not actionable yet.** Anything that genuinely responds to
 the hinge is blocked on Flutter, not on your team. If a stakeholder has seen
-Apple's demo and wants that, the honest answer is that it is upstream work in
-progress with no release date.
+Apple's demo and wants that, the honest answer is upstream work in progress
+with no release date.
 
 **The deadline is real but soft.** October 23 is when the first users can
 install your app on the device. It is not when it stops working.
@@ -451,47 +503,39 @@ install your app on the device. It is not when it stops working.
 
 ## How we measured this
 
-We built a probe app for the purpose. It renders and logs everything Flutter
-reports about its environment, size, pixel ratio, padding, insets, display
-features, orientation, text scale and brightness, along with its own rebuild
-counts and lifecycle events. We drove it through twenty-one situations and
-captured a screenshot of both displays and a full data dump for each.
+We built a probe app that renders and logs everything Flutter reports about its
+environment: size, pixel ratio, padding, insets, display features, orientation,
+text scale, brightness, rebuild counts and lifecycle events. We drove it through
+twenty-one situations and captured a screenshot of both displays and a full data
+dump for each. Two sessions on one machine, a week apart, on Xcode 27.1 beta,
+the iOS 27.1 simulator runtime and Flutter 3.47.5 stable.
 
-Two sessions on one machine, a week apart. The main set on September 21, and a
-re-measurement of the orientation behaviour on September 28, after the first pass
-turned out to be too thinly evidenced to publish.
-
-Xcode 27.1 beta, the iOS 27.1 simulator runtime, Flutter 3.47.5 stable.
-
-**What is solid and what is not.** The values that repeated across dozens of
+**What is solid and what is not.** Values that repeated across dozens of
 captures, like the 84-point inset and the empty display features, are reliable.
 The portrait date picker was measured once. The orientation finding rests on a
 single pair of requests per display. The black screen during a fold is something
 we watched, not something we timed, and we are not going to put a number on it.
+This is beta software measured a month before the hardware ships, so a real
+device may differ, and we will run the whole set again after launch.
 
-This is beta software, measured a month before the hardware ships. Numbers from a
-real device may differ, and we will run the whole set again after launch.
-
-The lab itself, the probe app, the harness, the screenshots and the raw logs, is
-something we are happy to share with anyone who wants to reproduce it. Ask us.
+The lab is public. The probe app, the harness, the twenty-one screenshots and
+the raw logs are all at
+[github.com/rcjuancarlosuwu/duo-lab](https://github.com/rcjuancarlosuwu/duo-lab),
+for anyone who wants to reproduce it or check a number.
 
 ---
 
 ## Where this leaves you
 
-The iPhone Duo is a small category today, and most of what it asks for is not
-specific to it. The assumptions it breaks were never really safe: one screen size
-known at startup, margins that match on both sides, and device size standing in
-for available room. The Duo just removes the last configuration where those
-assumptions happened to hold.
+The assumptions this device breaks were never really safe: one screen size known
+at startup, margins that match on both sides, device size standing in for
+available room. The Duo just removes the last configuration where they happened
+to hold, and fixing them pays for itself on hardware you already support.
 
-Two things are specific to it and belong in planning. Orientation locking did not
-hold in the state we measured on the inner display. And Flutter has no way, in
-layout or in lifecycle, to tell you the phone is folded, so anything depending on
-the hinge has to wait.
-
-The rest is work that pays for itself on hardware you already support. October 23
-is a good reason to finally schedule it.
+Two things are specific to it and belong in planning. Orientation locking did
+not hold in the state we measured on the inner display. And Flutter cannot tell
+you the phone is folded, in layout or in lifecycle, so anything depending on the
+hinge has to wait. October 23 is a good reason to finally schedule the rest.
 
 ---
 
